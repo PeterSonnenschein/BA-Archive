@@ -11,7 +11,9 @@ Use the included Makefile:
 ## Running the Profiler:
 You need to load the page_to_nid.ko module before running the profiler:
     sudo insmod page_to_nid.ko
-
+Then use:
+     sudo ./profiler <target>
+     
 ## Error Handling:
 If the kfunc fails to compile with:
      Skipping BTF generation for page_to_nid.ko due to unavailability of vmlinux
