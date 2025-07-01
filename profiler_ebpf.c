@@ -278,7 +278,7 @@ int kretprobe_mpol_misplaced(struct pt_regs *ctx)
 	if (!mapping)
 		return 0;
 
-	if (!((unsigned long)mapping & PAGE_MAPPING_ANON))
+	if (((unsigned long)mapping & PAGE_MAPPING_ANON))
 		return 0;
 
 	int flags = BPF_CORE_READ(folio, flags);
