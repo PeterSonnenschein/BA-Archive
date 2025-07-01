@@ -8,6 +8,10 @@ import os
 folder = "profiler_output"
 os.makedirs(folder, exist_ok=True)
 
+for filename in os.listdir(folder):
+    if filename.endswith(".png"):
+        os.remove(os.path.join(folder, filename))
+
 df = pd.read_csv("profiling_data.csv")
 
 # filter dataframe to only include entries with latency below a certain threshold
