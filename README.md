@@ -1,19 +1,17 @@
 ===========================================================================================
-# Archive of Bachelor Thesis Design and Implementation of a NUMA-AWARE Evaluation Framework
+Archive of Bachelor Thesis Design and Implementation of a NUMA-AWARE Evaluation Framework
 ===========================================================================================
 Dependencies:
---------------------------
 sudo apt install linux-tools-$(uname -r)
 sudo apt install clang llvm
 
 Compiling:
-# --------------------------
-# Use the included Makefile:
-#     make
-#
-# Running the Profiler:
-# --------------------------
-# You need to load the page_to_nid.ko module before running the profiler:
+Use the included Makefile:
+     make
+
+Running the Profiler:
+
+You need to load the page_to_nid.ko module before running the profiler:
 #     sudo insmod page_to_nid.ko
 #
 # Error Handling:
