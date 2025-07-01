@@ -1,12 +1,12 @@
 ===========================================================================================
 # Archive of Bachelor Thesis Design and Implementation of a NUMA-AWARE Evaluation Framework
 ===========================================================================================
-# Dependencies:
-# --------------------------
-# sudo apt install linux-tools-$(uname -r)
-# sudo apt install clang llvm
-#
-# Compiling:
+Dependencies:
+--------------------------
+sudo apt install linux-tools-$(uname -r)
+sudo apt install clang llvm
+
+Compiling:
 # --------------------------
 # Use the included Makefile:
 #     make
