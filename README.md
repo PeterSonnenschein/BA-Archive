@@ -12,7 +12,7 @@ Use the included Makefile:
 You need to load the page_to_nid.ko module before running the profiler:  
     sudo insmod page_to_nid.ko  
 Then use:  
-     sudo ./profiler <target>  
+     sudo ./profiler target_program 
      
 ## Error Handling:
 If the kfunc fails to compile with:  
